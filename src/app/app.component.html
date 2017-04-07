@@ -1,3 +1,71 @@
-<h1>
-  {{title}}
-</h1>
+    <!-- Navbar goes here -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Proton's {{ title }}</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="waves-effect waves-light btn" href="#signup">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+    <!-- Modal Structure -->
+    <div id="signup" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4 class="center-align">Create Account</h4>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="username" type="text" class="validate">
+                  <label for="username">Username</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="center-align">
+                <a class="waves-effect waves-light btn">Sign Up</a>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+        
+
+    <!-- Page Layout here -->
+    <div class="row">
+      <div class="col s12 offset-m4 l3"> <!-- Note that "m4 l3" was added -->
+        <div class="mainform"><!-- Grey navigation panel
+
+              This content will be:
+          3-columns-wide on large screens,
+          4-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+          <h4 class="center-align"> Login </h4>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="username" type="text" class="validate">
+                  <label for="username">Username</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="center-align">
+                <a class="waves-effect waves-light btn">Login</a>
+              </div>
+            </form>
+          </div>
+      </div>
+
+    </div>

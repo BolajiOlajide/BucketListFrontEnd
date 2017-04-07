@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.nav-wrapper {
+    background-color: black !important;
+}
+
+body {
+    background-image: url('assets/bucketlist.jpg');
+    background-repeat: no-repeat;
+}
+
+.mainform {
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff !important;
+}
