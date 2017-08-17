@@ -1,0 +1,25 @@
+.nav-wrapper {
+    background-color: black !important;
+}
+
+body {
+    /*background-image: url('https://image.ibb.co/e8xOvk/bucketlist.jpg');*/
+    background-color: white;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.mainform {
+    margin-top: 100px;
+    margin-left: 550px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff !important;
+}
+
+main {
+    flex: 1 0 auto;
+}

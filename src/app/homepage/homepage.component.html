@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+
+<!-- Modal Structure -->
+<div id="signup" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4 class="center-align">Create Account</h4>
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="username" type="text" class="validate" name="username" [(ngModel)]="username">
+              <label for="username">Username</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate" name="password">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="center-align">
+            <a class="waves-effect waves-light btn" (click)="signUp()">Sign Up</a>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Page Layout here -->
+    <div class="row">
+      <div class="col s12 offset-m4 l3"> <!-- Note that "m4 l3" was added -->
+        <div class="mainform"><!-- Grey navigation panel
+
+              This content will be:
+          3-columns-wide on large screens,
+          4-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+          <h4 class="center-align"> Welcome </h4>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="username" type="text" name="username" [(ngModel)]="username">
+                  <label for="username">Username</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate" name="password" [(ngModel)]="password">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="center-align">
+                <a class="waves-effect waves-light btn" (click)="login()">Login</a>
+              </div>
+            </form>
+          </div>
+      </div>
+
+    </div>

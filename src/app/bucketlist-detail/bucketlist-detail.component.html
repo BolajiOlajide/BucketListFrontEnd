@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="progress" *ngIf="showProgressBar">
+  <div class="indeterminate"></div>
+</div>
+<div class='container'>
+  <ul class="collection green">
+    <li class="collection-header center"><h4>{{ bucketlistName }}</h4></li>
+  </ul>
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li *ngFor='let item of items'>
+      <div class="collapsible-header">
+        <i class="material-icons">toc</i>
+        {{ item.name }}
+      </div>
+      <div class="collapsible-body">
+        <p>Done: {{ item.done }}</p>
+        <p> ID: {{ item.id }} </p>
+        <p> Date Modified: {{ item.date_modified }} </p>
+        <p> Date Created: {{ item.date_created }} </p>
+        <button class="btn waves-effect waves-light blue right-align" type="submit" name="action"> EDIT ITEM
+          <i class="material-icons right">send</i>
+        </button>
+        <button class="btn waves-effect waves-light red right-align" type="submit" name="action" (click)="deleteBucketListItem(item.id)"> DELETE ITEM
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </li>
+  </ul>
+  <a class="waves-effect waves-light btn red" (click)="deleteBucketList()">DELETE BucketList!!!</a>
+</div>
+
+<app-footer></app-footer>
